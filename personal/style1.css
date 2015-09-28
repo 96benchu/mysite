@@ -1,0 +1,515 @@
+
+body {
+    /*background-image: url("background.png");
+    background-repeat:no-repeat;
+    background-size:cover;*/
+    background-color:#fcfcfc
+}
+
+
+
+
+@font-face {
+    font-family: lato-black;
+    src: url(lato-black.ttf);
+}
+
+@font-face {
+    font-family: lato-light;
+    src: url(lato-light.ttf);
+}
+
+
+#fadein1 {
+
+    margin-top: 10px;
+    font-family: lato-black;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 190px;
+    left: -115px;
+    color: #0;
+    height: 100px;
+    padding: 10px;
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -moz-animation-duration: .7s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -webkit-animation-duration: .7s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+        animation-duration: .7s;
+    
+}
+@-moz-keyframes dropHeader {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(-60px);
+    }
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(-60px);
+    }
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+@keyframes dropHeader dropHeader {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(-60px);
+    }
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+
+
+
+#fadein3 {
+
+    font-family: lato-light;
+    font-size: 60px;
+    font-weight: 1000;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 175px;
+    color: #0;
+    height: 50px;
+    padding: 10px;
+    -moz-animation-name: dropHeaderna;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -moz-animation-duration: 1.8s;
+
+    -webkit-animation-name: dropHeaderna;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -webkit-animation-duration: 1.8s;
+
+
+    animation-name: dropHeaderna;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    animation-duration: 1.8s;
+    
+}
+@-moz-keyframes dropHeaderna {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateX(60px);
+    }
+    72%{
+        opacity:0;
+        -webkit-transform: translateX(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+
+
+@-webkit-keyframes dropHeaderna {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateX(60px);
+    }
+    72%{
+        opacity:0;
+        -webkit-transform: translateX(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+@keyframes dropHeaderna {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateX(60px);
+    }
+    72%{
+        opacity:0;
+        -webkit-transform: translateX(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+
+
+
+#fadein2 {
+
+    font-family: lato-black;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 71px;
+    left: 50px;
+    color: #0;
+    height: 50px;
+    padding: 10px;
+    -moz-animation-name: dropHeadern;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -moz-animation-duration: 1.1s;
+
+    -webkit-animation-name: dropHeadern;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    -webkit-animation-duration: 1.1s;
+
+
+    animation-name: dropHeadern;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.24,.81,.5,1.59);
+    animation-duration: 1.1s;
+    
+}
+@-moz-keyframes dropHeadern {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(60px);
+    }
+    50%{
+        opacity:0;
+        -webkit-transform: translateY(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+
+@-webkit-keyframes dropHeadern {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(60px);
+    }
+    50%{
+        opacity:0;
+        -webkit-transform: translateY(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+@keyframes dropHeadern {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(60px);
+    }
+    50%{
+        opacity:0;
+        -webkit-transform: translateY(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+#fadein4 {
+
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 15px;
+    color: #0;
+    height: 50px;
+    padding: 10px;
+    -moz-animation-name: fadein;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 4s;
+
+    -webkit-animation-name: fadein;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.7,.92,.5,1.34);
+    -webkit-animation-duration: 4s;
+
+
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.7,.92,.5,1.34);
+    animation-duration: 4s;
+    
+}
+@-moz-keyframes fadein {
+    0% {
+        
+        opacity:0;
+        
+    }
+    75%{
+        opacity:0;    
+}
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        
+        opacity:0;
+        
+    }
+    75%{
+        opacity:0;    
+}
+
+    100% {
+
+        opacity: 1;
+    }
+}
+@keyframes fadein fadein {
+    0% {
+        
+        opacity:0;
+        
+    }
+    75%{
+        opacity:0;    
+}
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    max-width: 300px;
+    position:relative;
+    top:20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    -moz-animation-name: linefade;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 1.3s;
+
+    -webkit-animation-name: linefade;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.7,.92,.5,1.34);
+    -webkit-animation-duration: 1.3s;
+
+
+    animation-name: linefade;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.7,.92,.5,1.34);
+    animation-duration: 1.3s;
+}
+@-moz-keyframes linefade {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(40px);
+    }
+    60%{
+        opacity:0;
+        -webkit-transform: translateY(40px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+
+@-webkit-keyframes linefade {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(40px);
+    }
+    60%{
+        opacity:0;
+        -webkit-transform: translateY(40px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+@keyframes linefade {
+    0% {
+        
+        opacity:0;
+        -webkit-transform: translateY(60px);
+    }
+    60%{
+        opacity:0;
+        -webkit-transform: translateY(60px);
+}
+
+    100% {
+
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+
+input[type="image"]{
+    display: block;
+    position: relative;  
+    margin-left: auto;
+    margin-right: auto;
+    left: 20px;
+    top: 80px;
+    visibility: hidden;
+
+    -moz-animation-name: bounce;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    -moz-animation-duration: .6s;
+    -moz-animation-delay:4s;
+
+    -webkit-animation-name: bounce;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    -webkit-animation-duration: .6s;
+    -webkit-animation-delay:4s;
+
+
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-duration:.6s;
+    animation-delay:4s;
+}
+
+@-moz-keyframes bounce {
+    0% {
+         visibility: visible;
+        -webkit-transform: translateY(0px);
+        
+    }
+    50%{
+        visibility: visible;
+        -webkit-transform: translateY(10px);
+        
+}
+
+    100% {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+         visibility: visible;
+        -webkit-transform: translateY(0px);
+        
+    }
+    50%{
+        visibility: visible;
+        -webkit-transform: translateY(10px);
+        
+}
+
+    100% {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+    }
+}
+@keyframes bounce {
+    0% {
+         visibility: visible;
+        -webkit-transform: translateY(0px);
+        
+    }
+    50%{
+        visibility: visible;
+        -webkit-transform: translateY(10px);
+        
+}
+
+    100% {
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+#test {
+     font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-style: oblique;
+    text-align: center;
+    position: relative;
+    top: 3000px;
+    padding: 500px;
+}
+
+
+
+hr.style-five {
+    position: relative;
+    top:520px;
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}

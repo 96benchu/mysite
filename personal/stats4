@@ -1,0 +1,17 @@
+1. Resolves bias issues.
+2. Yes it was an experiment, they recorded data based on clinical trials of 2 different drugs
+3. a. The randomization was effective with a deviation of max +/-2
+b. Age distribution varies between the groups with group 0 being the highest and group 2 being the lowest.
+No signifigant outliers
+4. outcome, and treatment
+5.  explanatory: Treatent categorical (0 or 1 or 2) Response variable: Outcome categorial (0,1)
+6. Contingency table
+7. Conditional percentages of categorial respones group
+8. drug 0 was ineffective while drug 1 was twice as effective, drug 0 had the same succes rate as the placebo
+9. I belive drug 1 will have the most effective delay.
+10/11. explnatory: Treatment is the categorical, response variable: Time Quantitative
+12. Boxplot
+13. Descriptive statistics for datasets in multiple groups
+14. On average drug 1 is more useful in delaying recurrence
+15. Our expectations lined up with the results, the drug most useful at preveting depression might also be best at delaying it. To determine the drug use for specific people tayloring it for different people
+16.

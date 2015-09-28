@@ -1,0 +1,21 @@
+x = ((x>>31) & ~x) | (~(x>>31) & x); // negates it if its negative other wise positive
+   int a = (x >> 1) | x; //check if last 16 bits have any ones and put them in the first 16 repeat
+   int b = (a >> 2) | a;
+   int c = (b >> 4) | b;
+   int d = (c >> 8) | c;
+   int e = (d >> 16) | d; //fills in all the holes if there are no ones
+
+   int alt1 = (0x55);
+   alt1 = (alt1 << 24) |  (alt1 << 16) | (alt1 << 8) | (alt1); //0x55555555
+   int alt2 = (0x33);
+   alt2 = (alt2 << 24) |  (alt2 << 16) | (alt2 << 8) | (alt2);
+   int alt3 = (0x0f);
+   alt3 = (alt3 << 24) |  (alt3 << 16) | (alt3 << 8) | (alt3);
+
+   e = e - ((e >> 1) & alt1);
+   e = (((e >> 2) & alt2) + (e & alt2));
+   e = (((e >> 4) + e) & alt3);
+   e = e + (e >> 8);
+   e = ((e + (e >> 16)) & 0x3f);
+
+ return e + 1; //+1 because doeesnt count last bit
