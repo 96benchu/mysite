@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'> 
+ 
+
+
+
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="./personal/font-awesome-4.6.3/css/font-awesome.min.css">
+<title>Ben Chu</title>
+<script src="./personal/jquery.min.js"></script>
+<script src="./personal/bootbox.min.js"></script>
+<script src="./personal/bootstrap.min.js"></script>
+<script src="./personal/animatedmodal/animatedModal.min.js"></script>
+<link rel="stylesheet" href="./personal/animate.min.css">
+<link rel="stylesheet" type="text/css" href="./personal/style1.css">
+
+
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_MzAUchIkRsgSbNbFVGySr");
+   })();
+
+   
+</script>
+
+
+</head>
+<body class="preload">
+    <div id = "all-blur">
+        <div id="bg"></div>
+        <div id ="fadeins">
+            <div id ="fadein1">HELLO,</div>
+            <div id ="fadein2">I'M</div>
+            <div id ="fadein3">BEN</div>
+        </div>
+        <hr class = "style-two">
+        <div id ="fadein4">Nice to meet you.</div>
+
+        <div id = "buttonholder1">
+            <button class="button button1" href="#animatedModal1">about me</button>
+
+            <button class="button button2">projects</button>
+
+            <button class="button button3" href="#animatedModal3">contact</button>  
+        </div>
+
+    </div>
+</body>
+
+
+
+<div id="animatedModal1">
+    
+    <div  id="btn-close-modal1" class="close-animatedModal1"> 
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <button class="mdl-button mdl-js-button mdl-button--fab hvr-rotate">
+        <i class="material-icons">add</i>
+    </button>
+    </div>
+        
+    <div class="modal-content">
+        <div id ="modal1content">
+        <!--Your modal content goes here-->
+            
+            <p style = "font-size:18px;  font-weight: bold"> <span style = "font-size:40px">Hi, I'm Ben</span>, a software developer from the Bay area. I am a Junior at Carnegie Mellon University majoring in computer science and minoring in machine learning. I enjoy thinking about algorithmicly heavy problems as well as designing efficient code for large scale projects. I thoroughly enjoy statistical data analysis as well as all things optimizable </p>
+            <p style = "font-size:40px">____</p>
+            <br>
+            <p style = "font-size:18px;  font-weight: bold">I enjoy doing community service as a brother of Alpha Phi Omega in my free time as well as hip-hop dance and intramual soccer.</p>
+
+            <img id = "change" src = "./personal/modal_img.jpg" >
+        </div>      
+    </div>
+</div>
+
+<div id="animatedModal3">
+    
+    <div  id="btn-close-modal3" class="close-animatedModal3"> 
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <button class="mdl-button mdl-js-button mdl-button--fab hvr-rotate">
+        <i class="material-icons" >add</i>
+    </button>
+    
+    </div>
+        
+    <div class="modal-content">
+        <div id ="modal3content">
+        <!--Your modal content goes here-->
+            
+           <!--  <p style = "font-size:16px"> <span style = "font-size:43px; font-weight: bold">Hi, I'm Ben</span>, a software developer from the Bay area. I am a Junior at Carnegie Mellon University majoring in computer science and minoring in machine learning. I enjoy thinking about algorithmicly heavy problems as well as designing efficient code for large scale projects. I thoroughly enjoy statistical data analysis as well as all things optimizable </p> -->
+
+            <div id = " contact" style = "float:left; left: 570px; position:relative; bottom: 100px">
+                <p style = "font-size:60px"> CONTACT</p>
+                <br>
+                <p style = "font-size:40px">____</p>
+                <br>
+
+                <ul>
+                    <li><a class = "hvr-bounce-in" href="https://www.facebook.com/benjamin.chu1"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class = "hvr-bounce-in" href="https://www.linkedin.com/in/benjamin-chu-05913883"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class = "hvr-bounce-in" href="https://github.com/96benchu"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div id = "email">
+                <p id = "emailtxt" style = "font-size:60px"> Or send me an email</p>
+                <br>
+                <p style = "font-size:40px; right:0px; position:absolute">____</p>
+                <br>
+                <p id = "name"> Name: </p>
+                <form>
+                  <input type="text" id = "namebox">
+               
+
+                <p id = "subject"> Subject: </p>
+                
+                  <input type="text" id = "subbox">
+
+                <p id = "emailt"> Email: </p>
+                
+                  <input type="text" id = "emailbox">
+
+                <p id = "msg"> Message: </p>
+                
+                <textarea id = "msgbox"></textarea>
+                <button type='button' id="sendbutton" onclick="sendEmail()">Send</button>
+                </form>
+                
+            </div>
+        
+            
+            
+        </div>      
+    </div>
+</div>   
+</body>
+
+<script type="text/javascript">
+//auto expand textarea
+function sendEmail(){
+        var name = document.getElementById('namebox').value;
+
+        var subject = "Subject: ".concat(document.getElementById('subbox').value);
+        
+        var email = "email: ".concat(document.getElementById('emailbox').value);
+        var msg =  "message: ".concat(document.getElementById('msgbox').value);
+        $("#sendbutton").text("Sending...");
+        emailjs.send("gmail","template_vv9sJka5",{"from_name": name, "subject": subject, 
+        "email": email ,"message_html": msg})
+
+        .then(function() {
+           $("#sendbutton").text("Sent!");
+           $("#sendbutton").prop( "disabled", true );
+        }, function(err) {
+           $("#sendbutton").text("Failed, please try again");
+        });
+
+        
+        
+    }
+</script>
+
+<script type="text/javascript">
+$('.preload').css('opacity', 0);
+$('#change').css('opacity', 0);
+$(window).load(function() {
+  $('.preload').css('opacity', 1);
+});
+$(window).load(function() {
+  $('#change').css('opacity', 0);
+});
+// $(window).load(function() {
+//   $('img').css('opacity', .9);
+// });
+
+
+
+</script>
+
+<script>
+    // $(window).load(function() {
+    // $("body").removeClass("preload");
+    //     });
+    $(".button1").animatedModal({
+        modalTarget:'animatedModal1',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutRight',
+                animationDuration: '.35s',
+                color:'',
+                overflow: 'hidden',
+                // Callbacks
+                beforeOpen: function() {
+                    var all = document.getElementById('all-blur');
+                    all.setAttribute("style","-webkit-filter:grayscale(70%) blur(8px)")
+                    console.log("The animation was called");
+                    var img = document.getElementById("change");
+                    img.setAttribute("style", "opacity:.8")
+                    img.setAttribute("style", "bottom:300px")
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    var all = document.getElementById('all-blur');
+                    all.setAttribute("style","-webkit-filter:blur(0px)")
+                    var bg = document.getElementById('bg');
+                    bg.setAttribute("style","-webkit-filter:grayscale(70%) blur(1px)")
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    var img = document.getElementById("change");
+                    img.setAttribute("style", "opacity:0")
+                    console.log("The animation is completed");
+                }
+    });
+
+    $(".button3").animatedModal({
+        modalTarget:'animatedModal3',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutLeft',
+                animationDuration: '.35s',
+                color:'',
+                // Callbacks
+                beforeOpen: function() {
+                    var all = document.getElementById('all-blur');
+                    all.setAttribute("style","-webkit-filter:grayscale(70%) blur(8px)")
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    var all = document.getElementById('all-blur');
+                    all.setAttribute("style","-webkit-filter:blur(0px)")
+                    var bg = document.getElementById('bg');
+                    bg.setAttribute("style","-webkit-filter:grayscale(70%) blur(1px)")
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+    });
+
+</script>
+
+
+
+
+
+
+
+<!-- <div id ="test">POOP</div> -->
+
+
+
+</body>
+</html>
